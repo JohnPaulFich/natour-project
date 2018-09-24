@@ -9,8 +9,6 @@
 		border-radius: 10rem;
 		transition: all .2s;
 		font-size: 1.6rem;
-		-webkit-perspective: 1000; 
-		-webkit-backface-visibility: hidden;
 		-webkit-font-smoothing: antialiased !important;                         
 		font-smoothing: antialiased !important;
 	}
@@ -36,6 +34,15 @@
 
 		&::after {
 			background-color: $color-white;
+		}
+	}
+
+	&--green {
+		background-color: $color-primary;
+		color: $color-white;
+
+		&::after {
+			background-color: $color-primary;
 		}
 	}
 
