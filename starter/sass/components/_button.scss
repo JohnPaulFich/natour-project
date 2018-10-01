@@ -1,4 +1,5 @@
 .btn {
+	&,
 	&:link,
 	&:visited {
 		position: relative;
@@ -8,12 +9,16 @@
 		padding: 1.5rem 4rem;
 		border-radius: 10rem;
 		transition: all .2s;
-		font-size: 1.6rem;
+		font-size: $default-font-size;
 		-webkit-font-smoothing: antialiased !important;                         
 		font-smoothing: antialiased !important;
+
+		//Change for the <button> element
+		border: none;
+		cursor: pointer;
 	}
 
-	&:hover {
+	&:hover, {
 		transform: translateY(-.3rem);
 		box-shadow: 0 1rem 2rem rgba($color-black,0.2);
 
@@ -23,9 +28,11 @@
 		}
 	}
 
-	&:active {
+	&:active,
+	&:focus {
 		transform: translateY(-.1rem);
 		box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
+		outline: none;
 	}
 
 	&--white {
